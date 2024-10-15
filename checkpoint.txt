@@ -1,0 +1,147 @@
+g
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git
+$ git init
+Initialized empty Git repository in C:/Users/ASPIRE 5 I5/Desktop/learn_git/.git/
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git add .
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git commit -m 'adding third.txt'
+[master (root-commit) af78222] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git remote add origin https://github.com/mariemksentini/learn_git.git
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 217 bytes | 217.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/mariemksentini/learn_git.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git log .
+commit af78222e0c16676c9b0a83a6cc97fe354538d2b4 (HEAD -> master, origin/master)
+Author: mariemksentini <maryemksentini@gmail.com>
+Date:   Tue Oct 15 12:26:26 2024 +0100
+
+    adding third.txt
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git add .
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git git commit -m "adding fourth"
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git commit -m "adding fourth"
+[master f6def07] adding fourth
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 246 bytes | 246.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/mariemksentini/learn_git.git
+   af78222..f6def07  master -> master
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git log .
+commit f6def07238786d4ce31be65d8fa4929a39635207 (HEAD -> master, origin/master)
+Author: mariemksentini <maryemksentini@gmail.com>
+Date:   Tue Oct 15 12:46:39 2024 +0100
+
+    adding fourth
+
+commit af78222e0c16676c9b0a83a6cc97fe354538d2b4
+Author: mariemksentini <maryemksentini@gmail.com>
+Date:   Tue Oct 15 12:26:26 2024 +0100
+
+    adding third.txt
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git add third.txt
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git rm third.txt
+rm 'third.txt'
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git commit -m "removing third.txt"
+[master f08ad8e] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 241 bytes | 241.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/mariemksentini/learn_git.git
+   f6def07..f08ad8e  master -> master
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git log .
+commit f08ad8e9e2f137c1f8b54215fc439398db0bfe52 (HEAD -> master, origin/master)
+Author: mariemksentini <maryemksentini@gmail.com>
+Date:   Tue Oct 15 12:47:56 2024 +0100
+
+    removing third.txt
+
+commit f6def07238786d4ce31be65d8fa4929a39635207
+Author: mariemksentini <maryemksentini@gmail.com>
+Date:   Tue Oct 15 12:46:39 2024 +0100
+
+    adding fourth
+
+commit af78222e0c16676c9b0a83a6cc97fe354538d2b4
+Author: mariemksentini <maryemksentini@gmail.com>
+Date:   Tue Oct 15 12:26:26 2024 +0100
+
+    adding third.txt
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git config --global
+error: no action specified
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git config --global core.pager=cat
+error: invalid key: core.pager=cat
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git config --global core.pager=cat-
+error: invalid key: core.pager=cat-
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git config --global core.pager="cat"
+error: invalid key: core.pager=cat
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git config --global core.pager "cat"
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$ git config --list --global
+user.email=maryemksentini@gmail.com
+user.name=mariemksentini
+core.pager=cat
+
+ASPIRE 5 I5@DESKTOP-P8S7S85 MINGW64 ~/Desktop/learn_git (master)
+$
